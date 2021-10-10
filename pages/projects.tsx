@@ -30,12 +30,21 @@ const Home: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Layout>
-                <div className="flex justify-center mt-5">
-                    <div className="absolute left-50 mx-3 sm:mx-5 top-48 z-10 rounded-xl pt-2 pb-1 px-2 bg-gray-800">
-                        <Image className="rounded-lg" src={image} height={250} width={350} />
-                    </div>
-                    <div className="relative">
-                       <IPod handleClick={handleClick} />
+                <div className="flex justify-center">
+                    <div className="grid grid-cols gap-24 lg:grid-cols-2 mt-5 border-2 border-red-500 px-10 w-full">
+                        <div className="relative">
+                            <div className="relative border-2 border-green-500">
+                                <div className="absolute top-10 z-10 rounded-xl pt-2 pb-1 px-2 bg-gray-800 mx-auto">
+                                    {image ? <Image className="rounded-lg" src={image} height={430} width={595} /> : <span className="text-white text-2xl">...Loading</span>}
+                                </div>
+                                <IPod handleClick={handleClick} />
+                            </div>
+                        </div>
+                        <div className="bg-white h-64 rounded-lg">
+                            <div className="mt-8 ml-8 text-2xl text-mac-purple font-semibold">
+                                Jobbox.me
+                            </div>
+                        </div>
                     </div>
                 </div>
             </Layout>

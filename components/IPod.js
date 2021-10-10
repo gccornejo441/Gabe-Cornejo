@@ -5,9 +5,8 @@ const IPod = (props) => {
 
 return (
         <svg
-            width="110mm"
-            height="199.99625mm"
-            viewBox="0 0 110 199.99625"
+            className="w-full h-full"
+            viewBox="0 0 110 200"
             version="1.1"
             id="svg5"
             inkscapeVersion="1.1.1 (3bf5ae0d25, 2021-09-20)"
