@@ -9,7 +9,7 @@ module.exports = {
         "mac-purple": "#363BB6",
       },
       backgroundImage: theme => ({
-        'purple-background': "url('/purple-background.svg')",
+        'purple-background': "url('/images/purple-background.svg')",
        }),
     },
   },

@@ -1,15 +1,7 @@
 import * as React from 'react';
 
-const IPod = () => {
-const [opacity, setOpacity] = React.useState(0);
+const IPod = (props) => {
 
-const handleClick = () => {
-    if (opacity == 0) {
-        setOpacity(100)
-    } else {
-        setOpacity(0)
-    }
-}
 
 return (
         <svg
@@ -331,16 +323,14 @@ return (
                         id="path995" />
                 </g>
                 <circle
-                    style={{fill:"#d5ffe6", strokeWidth:"0.264999", fillOpacity:`${opacity}`}}
+                    style={{fill:"#d5ffe6", strokeWidth:"0.264999", fillOpacity:"0"}}
                     id="path902"
                     cx="83.850517"
                     cy="193.22121"
                     r="9.525773" />
                 <circle
-                    onClick={() => handleClick()}
-                    id="rightCircle"
-                    className="bg-red-500"
-                    style={{fill:"#d5ffe6", strokeWidth:"0.264999", fillOpacity:`${opacity}`}}
+                    onClick={(e) => props.handleClick(e)}
+                    style={{fill:"#d5ffe6", strokeWidth:"0.264999", fillOpacity:"0"}}
                     id="path902-8"
                     cx="129.43814"
                     cy="193.22121"
