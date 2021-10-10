@@ -5,9 +5,11 @@ module.exports = {
     extend: {
       colors: {
         "camp-green": "#3C6858",
+        "creme-purp": "#0720FF",
+        "mac-purple": "#363BB6",
       },
       backgroundImage: theme => ({
-        'green-background': "url('/green-background.png')",
+        'purple-background': "url('/purple-background.svg')",
        }),
     },
   },

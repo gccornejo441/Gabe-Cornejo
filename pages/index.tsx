@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Layout from '../components/Layout'
+import headShot from '../public/images/headShot.png'
 
 const Home: NextPage = () => {
   return (
@@ -13,8 +14,15 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-
-
+        <div className="text-center flex justify-center mt-36">
+          <div className="w-1/2">
+            <Image src={headShot} height={100} width={100} />
+            <h1 className="text-2xl text-mac-purple font-bold pb-10">Hi, I'm Gabe.</h1>
+            <p className="text-lg text-mac-purple font-bold">
+              I’m a web developer based in California.  I’m currently working away at developing awesome web apps.  In my free time I like to spend time with my family and work on side projects.
+            </p>
+          </div>
+        </div>
       </Layout>
     </div>
   )
