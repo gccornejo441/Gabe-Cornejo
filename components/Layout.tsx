@@ -15,19 +15,23 @@ export default function Layout({ children }) {
       </head>
       <main className="h-screen flex bg-purple-background bg-cover bg-center">
         <div className="container mx-auto">
-          <div className=" mt-20">
-            <ul className="font-sans text-mac-purple text-lg md:text-xl font-semibold grid grid-cols-4 justify-items-center">
+          <div className="mt-12 md:mt-20">
+            <ul className="font-sans text-mac-purple text-lg md:text-xl font-semibold grid md:grid-cols-4 justify-items-center">
               <li className="flex">
-                <Image src={gabeIcon} alt="gabe logo" height={50} width={50} />
-                <a className="text-2xl flex flex-col px-3" href="/"><span>GABE</span><span>CORNEJO</span></a>
+                <a className="text-2xl flex px-3" href="/">
+                  <Image src={gabeIcon} alt="gabe logo" height={50} width={50} />
+                  <div className="pl-5 mt-2 md:pl-5 md:mt-2 flex md:flex-col flex-row">
+                    <span>GABE</span><span>CORNEJO</span>
+                  </div>
+                </a>
               </li>
-              <li className="font-light">
+              <li className="font-light text-2xl">
                 Work
               </li>
-              <li className="font-light">
+              <li className="font-light text-2xl">
                 <a href="/projects">Projects</a>
               </li>
-              <li className="font-light">
+              <li className="font-light text-2xl">
                 Contact
               </li>
             </ul>
