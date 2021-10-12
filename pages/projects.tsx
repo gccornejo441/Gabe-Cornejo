@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import jobbme from '../public/images/jobbme.png'
-import webWorks from '../public/images/webWorks.png'
+import webWorks from '../public/images/webworks.png'
 import Layout from '../components/Layout'
 import IPod from '../components/IPod'
 import * as React from 'react';
