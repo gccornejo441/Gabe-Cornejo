@@ -22,7 +22,7 @@ let websiteData: IWebsites[] = [
         link: "https://www.jobbox.me/"
     }
 ]
-
+//
 type UpdateWebPage = {
     id: number,
     title: string,
