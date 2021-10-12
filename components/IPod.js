@@ -9,31 +9,31 @@ return (
             viewBox="0 0 110 200"
             version="1.1"
             id="svg5"
-            inkscapeVersion="1.1.1 (3bf5ae0d25, 2021-09-20)"
-            sodipodiDocname="ipod.svg"
-            xmlnsInkscape="http://www.inkscape.org/namespaces/inkscape"
-            xmlnsSodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+            inkscapeversion="1.1.1 (3bf5ae0d25, 2021-09-20)"
+            sodipodidocname="ipod.svg"
+            xmlnsinkscape="http://www.inkscape.org/namespaces/inkscape"
+            xmlnssodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
             xmlns="http://www.w3.org/2000/svg"
-            xmlnsSvg="http://www.w3.org/2000/svg">
+            xmlnssvg="http://www.w3.org/2000/svg">
             <sodipodiNamedview
                 id="namedview7"
                 pagecolor="#505050"
                 bordercolor="#ffffff"
                 borderopacity="1"
-                inkscapePageshadow="0"
-                inkscapePageopacity="0"
-                inkscapePagecheckerboard="1"
-                inkscapeDocument-units="mm"
+                inkscapepageshadow="0"
+                inkscapepageopacity="0"
+                inkscapepagecheckerboard="1"
+                inkscapedocument-units="mm"
                 showgrid="false"
-                inkscapeZoom="1.5554293"
-                inkscapeCx="416.28379"
-                inkscapeCy="437.82125"
-                inkscapeWindow-width="3840"
-                inkscapeWindow-height="2066"
-                inkscapeWindow-x="2869"
-                inkscapeWindow-y="-11"
-                inkscapeWindow-maximized="1"
-                inkscapeCurrent-layer="layer1" />
+                inkscapezoom="1.5554293"
+                inkscapecx="416.28379"
+                inkscapecy="437.82125"
+                inkscapewindow-width="3840"
+                inkscapewindow-height="2066"
+                inkscapewindow-x="2869"
+                inkscapewindow-y="-11"
+                inkscapewindow-maximized="1"
+                inkscapecurrent-layer="layer1" />
             <defs
                 id="defs2">
                 <filter
@@ -196,8 +196,8 @@ return (
                 </filter>
             </defs>
             <g
-                inkscapeLabel="Layer 1"
-                inkscapeGroupmode="layer"
+                inkscapelabel="Layer 1"
+                inkscapegroupmode="layer"
                 id="layer1"
                 transform="translate(-49.999999,-49.994399)">
                 <g
@@ -322,8 +322,9 @@ return (
                         id="path995" />
                 </g>
                 <circle
+                 onClick={(e) => props.handleClick(e)}
                     style={{fill:"#d5ffe6", strokeWidth:"0.264999", fillOpacity:"0"}}
-                    id="path902"
+                    id="path902-8"
                     cx="83.850517"
                     cy="193.22121"
                     r="9.525773" />

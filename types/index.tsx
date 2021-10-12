@@ -3,4 +3,5 @@ export interface IWebsites {
     title: string,
     body: string,
     link: string,
+    githubRepoName: string
 }

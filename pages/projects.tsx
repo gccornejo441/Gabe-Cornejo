@@ -7,19 +7,23 @@ import IPod from '../components/IPod'
 import * as React from 'react';
 import { ExternalLinkIcon } from '@heroicons/react/solid'
 import { IWebsites } from '../types'
+import Link from 'next/link';
+import githublogo from '../public/images/github.svg'
 
 let websiteData: IWebsites[] = [
     {
         id: 1,
         title: "WebWorksDreams.com",
         body: "WebWorksDreams was created to assist people in creating their dream websites.",
-        link: "https://www.webworksdreams.com/"
+        link: "https://www.webworksdreams.com/",
+        githubRepoName: "",
     },
     {
         id: 2,
         title: "Jobbox.me",
         body: "Jobbox was created to assist people in creating free and professional resumes.",
-        link: "https://www.jobbox.me/"
+        link: "https://www.jobbox.me/",
+        githubRepoName: "https://github.com/gccornejo441/jobbox",
     }
 ]
 //
@@ -28,6 +32,7 @@ type UpdateWebPage = {
     title: string,
     body: string,
     link: string,
+    githubRepoName: string,
 }
 
 
@@ -38,8 +43,8 @@ const Projects = () => {
     const websiteId = websiteData.find((data) => data.id);
 
     const handleClick = (e) => {
-        let rightButton = e.target.id;
-        if (rightButton === "path902-8" && image == jobbme && websiteId.id == 1) {
+        let button = e.target.id;
+        if (button === "path902-8" && image == jobbme && websiteId.id == 1) {
             setImage(webWorks)
             setWebDate(websiteData[0])
         } else {
@@ -70,16 +75,27 @@ const Projects = () => {
                                     <div className="mt-8 ml-8 text-2xl text-mac-purple font-semibold">
                                         {webData.title}
                                     </div>
-                                    <div className="mt-4 ml-8 text-2xl text-mac-purple font-light">
+                                    <div className="mt-4 ml-8 text-lg md:text-2xl text-mac-purple font-light">
                                         <p>
                                             {webData.body}
                                         </p>
-                                        <a href={webData.link} className="flex mt-8 hover:underline cursor-pointer">
-                                            <span>Go To Website</span>
-                                            <span>
-                                                <ExternalLinkIcon className="h-8 w-8 text-max-purple" />
-                                            </span>
-                                        </a>
+                                        <Link href={webData.link}>
+                                            <a className="flex mt-4 mb-2 md:mt-8 hover:underline cursor-pointer">
+                                                <span>Go To Website</span>
+                                                <span>
+                                                    <ExternalLinkIcon className="h-4 md:h-8 w-4 md:w-8 mt-2 ml-2 md:mt-0 md:ml-0 text-max-purple" />
+                                                </span>
+                                            </a>
+                                        </Link>
+                                        {webData.githubRepoName != "" ? (
+                                            <Link href={webData.githubRepoName}>
+                                                <Image
+                                                    src={githublogo}
+                                                    className="w-full h-full text-mac-purple cursor-pointer"
+                                                    alt="Github Logo"
+                                                />
+                                            </Link>
+                                        ) : false}
                                     </div>
                                 </div>
                             </>
