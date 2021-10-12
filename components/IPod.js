@@ -42,10 +42,10 @@ return (
                     height="756"
                     x="0"
                     y="-6"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                     filterUnits="userSpaceOnUse">
                     <feFlood
-                        flood-opacity="0"
+                        floodOpacity="0"
                         result="BackgroundImageFix"
                         id="feFlood828" />
                     <feBlend
@@ -93,10 +93,10 @@ return (
                     height="250"
                     x="0"
                     y="0"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                     filterUnits="userSpaceOnUse">
                     <feFlood
-                        flood-opacity="0"
+                        floodOpacity="0"
                         result="BackgroundImageFix"
                         id="feFlood871" />
                     <feColorMatrix
@@ -131,10 +131,10 @@ return (
                     height="116"
                     x="0"
                     y="0"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                     filterUnits="userSpaceOnUse">
                     <feFlood
-                        flood-opacity="0"
+                        floodOpacity="0"
                         result="BackgroundImageFix"
                         id="feFlood908" />
                     <feColorMatrix
