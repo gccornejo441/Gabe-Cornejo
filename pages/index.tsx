@@ -45,7 +45,7 @@ const Home: NextPage = () => {
               </Link>
             </li>
             <li className="pb-4">
-              <Link href="https://www.linkedin.com/in/gabriel-cornejo-3a913a184/">
+              <Link href="www.linkedin.com/in/gabecornejo">
                 <Image
                   src={linkedinlogo}
                   className="w-full h-full text-mac-purple cursor-pointer"
