@@ -44,7 +44,7 @@ const Projects = () => {
     const websiteId = websiteData.find((data) => data.id);
 
     const handleClick = (e) => {
-        console.log("eee: ", e);
+ 
 
         let button = e.target.id;
         if (button === "path902-8" && image == jobbme && websiteId.id == 1) {
